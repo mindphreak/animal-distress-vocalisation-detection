@@ -26,4 +26,55 @@ This project presents a novel deep learning approach to identify **distressed an
 ---
 
 
+---
+
+## 🛠️ Tech Stack
+
+- Python 3.8
+- TensorFlow / Keras
+- Librosa (audio processing)
+- OpenCV (image resizing)
+- Scikit-learn (clustering)
+- FSD50K Dataset
+
+---
+
+## 📈 Results
+
+| Feature Extractor     | Clustering Type   | Distance Metric | Silhouette Score |
+|-----------------------|------------------|-----------------|------------------|
+| VGG-16 (Target-trained)   | K-Means            | Euclidean        | **0.83**           |
+| VGG-16 (Standard)     | K-Means            | Euclidean        | 0.74              |
+| MobileNetV2 (Target-trained) | K-Means        | Cosine           | 0.65              |
+| MobileNetV2 (Standard) | K-Means           | Cosine           | 0.51              |
+
+---
+
+## 📚 Future Work
+
+- Explore **autoencoders** and **contrastive learning** for better feature embeddings
+- Replace K-means with **Gaussian Mixture Models (GMMs)**
+- Build a **real-time passive acoustic monitoring system**
+- Extend to other domains lacking labeled data
+
+---
+
+## 🐈‍⬛ Acknowledgements
+
+Dedicated to my late pet cat **Mathai**, and his sibling **Rappai**, who inspired this project.  
+Grateful to Dr. Catherine Mulwa (Supervisor), Eduardo Fonseca (FSD50K), and the Sound of AI community.
+
+---
+
+## 📜 License
+
+This project is for academic and non-commercial use. Please cite appropriately if referencing.
+
+---
+
+## 📎 Links
+
+- 🔗 [FSD50K Dataset](https://zenodo.org/record/4060432)
+
+
 
